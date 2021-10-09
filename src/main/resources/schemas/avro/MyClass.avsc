@@ -1,0 +1,347 @@
+{
+  "type": "record",
+  "name": "MyClass",
+  "namespace": "com.test.avro",
+  "fields": [
+    {
+      "name": "buckets",
+      "type": {
+        "type": "record",
+        "name": "buckets",
+        "fields": [
+          {
+            "name": "SearchedFor",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "SearchedFor",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  },
+                  {
+                    "name": "label",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "InterestedIn",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "InterestedIn",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  },
+                  {
+                    "name": "label",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "LoggedIn",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "LoggedIn",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "invite_type",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "invite_type",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PreChatDisp",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "PreChatDisp",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "Journey",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "Journey",
+                "fields": []
+              }
+            }
+          },
+          {
+            "name": "prechat",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "prechat",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "intime",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "intime",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "reporting",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "reporting",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "wrapup",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "wrapup",
+                "fields": [
+                  {
+                    "name": "type",
+                    "type": "string"
+                  },
+                  {
+                    "name": "context_variable",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "predefined_values",
+      "type": {
+        "type": "record",
+        "name": "predefined_values",
+        "fields": [
+          {
+            "name": "bd",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "bd",
+                "fields": [
+                  {
+                    "type": "string",
+                    "name": "type"
+                  },
+                  {
+                    "name": "values",
+                    "type": {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "hhs",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "hhs",
+                "fields": [
+                  {
+                    "type": "string",
+                    "name": "type"
+                  },
+                  {
+                    "type": "string",
+                    "name": "values"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "intent",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "intent",
+                "fields": [
+                  {
+                    "type": "string",
+                    "name": "type"
+                  },
+                  {
+                    "name": "values",
+                    "type": {
+                      "type": "array",
+                      "items": {
+                        "type": "record",
+                        "name": "values",
+                        "fields": [
+                          {
+                            "name": "AccountManagement",
+                            "type": {
+                              "type": "array",
+                              "items": {
+                                "type": "record",
+                                "name": "AccountManagement",
+                                "fields": [
+                                  {
+                                    "name": "type",
+                                    "type": "string"
+                                  },
+                                  {
+                                    "name": "values",
+                                    "type": {
+                                      "type": "array",
+                                      "items": "string"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "resolution",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "resolution",
+                "fields": [
+                  {
+                    "type": "string",
+                    "name": "type"
+                  },
+                  {
+                    "name": "values",
+                    "type": {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
